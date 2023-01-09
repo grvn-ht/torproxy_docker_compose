@@ -9,12 +9,11 @@ from logging.handlers import WatchedFileHandler
 import os
 
 
-class over_control(Controller):
+class Docker_Controller(Controller):
   @staticmethod
-  def from_port(address = '127.0.0.1', port = 'default'):
+  def from_port(address = 'tor', port = 9051):
     import stem.connection
     control_port = stem.socket.ControlPort(address, port)
-
     return Controller(control_port)
 
 if os.name == 'nt':
@@ -25,7 +24,7 @@ else:
     host = 'tor'
 
 def renew_tor_ip():
-    with over_control.from_port(address = host, port = 9051) as controller:
+    with Docker_Controller.from_port(address = host, port = 9051) as controller:
         controller.authenticate(password="admin")
         controller.signal(Signal.NEWNYM)
         controller.close()
