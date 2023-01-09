@@ -1,0 +1,16 @@
+Starting new HTTP connection (1): icanhazip.com:80
+http://icanhazip.com:80 "GET / HTTP/1.1" 200 15
+b'185.243.218.27\n'
+GETCONF __owningcontrollerprocess (runtime: 0.0008)
+Error while receiving a control message (SocketClosed): received exception "read of closed file"
+Starting new HTTP connection (1): icanhazip.com:80
+http://icanhazip.com:80 "GET / HTTP/1.1" 200 14
+b'45.151.167.11\n'
+GETCONF __owningcontrollerprocess (runtime: 0.0007)
+Error while receiving a control message (SocketClosed): received exception "read of closed file"
+Starting new HTTP connection (1): icanhazip.com:80
+http://icanhazip.com:80 "GET / HTTP/1.1" 200 16
+b'185.220.102.254\n'
+GETCONF __owningcontrollerprocess (runtime: 0.0008)
+Error while receiving a control message (SocketClosed): received exception "read of closed file"
+-----------------------------------

@@ -1,0 +1,55 @@
+Starting new HTTP connection (1): icanhazip.com:80
+http://icanhazip.com:80 "GET / HTTP/1.1" 200 14
+b'23.129.64.214\n'
+GETCONF __owningcontrollerprocess (runtime: 0.0034)
+Error while receiving a control message (SocketClosed): received exception "[WinError 10038] Une opération a été tentée sur autre chose qu’un socket"
+Starting new HTTP connection (1): icanhazip.com:80
+http://icanhazip.com:80 "GET / HTTP/1.1" 200 16
+b'185.220.102.241\n'
+GETCONF __owningcontrollerprocess (runtime: 0.0035)
+Error while receiving a control message (SocketClosed): received exception "[WinError 10038] Une opération a été tentée sur autre chose qu’un socket"
+Starting new HTTP connection (1): icanhazip.com:80
+http://icanhazip.com:80 "GET / HTTP/1.1" 200 14
+b'107.189.30.86\n'
+GETCONF __owningcontrollerprocess (runtime: 0.0029)
+Error while receiving a control message (SocketClosed): received exception "[WinError 10038] Une opération a été tentée sur autre chose qu’un socket"
+-----------------------------------
+Starting new HTTP connection (1): icanhazip.com:80
+http://icanhazip.com:80 "GET / HTTP/1.1" 200 15
+b'107.189.10.143\n'
+Error while receiving a control message (SocketClosed): received exception "[WinError 10058] Une demande d’envoi ou de réception de données n’a pas été autorisée car le socket avait déjà été éteint dans cette direction par un appel d’arrêt précédent"
+Error while receiving a control message (SocketClosed): received exception "[WinError 10038] Une opération a été tentée sur autre chose qu’un socket"
+Authentication failed: Password did not match HashedControlPassword *or* authentication cookie.
+Traceback (most recent call last):
+  File "c:\users\grvnh\documents\scrap_planespotter\test.py", line 42, in <module>
+    do_req(logger)
+  File "c:\users\grvnh\documents\scrap_planespotter\test.py", line 34, in do_req
+    renew_tor_ip()
+  File "c:\users\grvnh\documents\scrap_planespotter\test.py", line 20, in renew_tor_ip
+    controller.authenticate(password="admin")
+  File "C:\Users\grvnh\.virtualenvs\scrap_planespotter-Py3EaRBd\lib\site-packages\stem\control.py", line 1112, in authenticate
+    stem.connection.authenticate(self, *args, **kwargs)
+  File "C:\Users\grvnh\.virtualenvs\scrap_planespotter-Py3EaRBd\lib\site-packages\stem\connection.py", line 629, in authenticate
+    raise auth_exc
+  File "C:\Users\grvnh\.virtualenvs\scrap_planespotter-Py3EaRBd\lib\site-packages\stem\connection.py", line 583, in authenticate
+    authenticate_password(controller, password, False)
+  File "C:\Users\grvnh\.virtualenvs\scrap_planespotter-Py3EaRBd\lib\site-packages\stem\connection.py", line 739, in authenticate_password
+    raise IncorrectPassword(str(auth_response), auth_response)
+stem.connection.IncorrectPassword: Authentication failed: Password did not match HashedControlPassword *or* authentication cookie.
+-----------------------------------
+Starting new HTTP connection (1): icanhazip.com:80
+http://icanhazip.com:80 "GET / HTTP/1.1" 200 15
+b'209.141.45.205\n'
+GETCONF __owningcontrollerprocess (runtime: 0.0061)
+Error while receiving a control message (SocketClosed): received exception "[WinError 10038] Une opération a été tentée sur autre chose qu’un socket"
+Starting new HTTP connection (1): icanhazip.com:80
+http://icanhazip.com:80 "GET / HTTP/1.1" 200 15
+b'192.42.116.205\n'
+GETCONF __owningcontrollerprocess (runtime: 0.0029)
+Error while receiving a control message (SocketClosed): received exception "[WinError 10038] Une opération a été tentée sur autre chose qu’un socket"
+Starting new HTTP connection (1): icanhazip.com:80
+http://icanhazip.com:80 "GET / HTTP/1.1" 200 14
+b'23.129.64.144\n'
+GETCONF __owningcontrollerprocess (runtime: 0.0030)
+Error while receiving a control message (SocketClosed): received exception "[WinError 10038] Une opération a été tentée sur autre chose qu’un socket"
+-----------------------------------
